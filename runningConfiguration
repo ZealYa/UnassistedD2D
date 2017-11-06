@@ -1,0 +1,40 @@
+SinglePair-UDP-D2D
+SinglePair-UDP-D2D-Multiple
+SinglePair-UDP-D2D-Unassisted
+SinglePair-UDP-D2D-Unassisted-Multiple
+SinglePair-TCP-D2D
+SinglePair-TCP-D2D-Multiple
+SinglePair-TCP-D2D-Unassisted
+SinglePair-TCP-D2D-Unassisted-Multiple
+MultiplePairs-UDP-D2D
+MultiplePairs-UDP-D2D-Unassisted
+MultiplePairs-TCP-D2D
+MultiplePairs-TCP-D2D-Unassisted
+
+
+opp_runall $(nproc) ./unassistedD2D -u Cmdenv -c MultiplePairs-UDP-D2D-Unassisted -r 0..9 -n .:../inet/src/:../simulte-unassistedD2D/src/ unassistedD2D.ini
+opp_runall -j$(nproc) ./unassistedD2D -u Cmdenv -c MultiplePairs-UDP-D2D-Unassisted -r 0..9 -n .:../inet/src/:../simulte-unassistedD2D/src/ unassistedD2D.ini
+opp_runall -j$(nproc) ./unassistedD2D -u Cmdenv -c MultiplePairs-UDP-D2D-Unassisted -r 0..4 -n .:../inet/src/:../simulte-unassistedD2D/src/ unassistedD2D.ini
+opp_runall -j$(nproc) ./unassistedD2D -u Cmdenv -c MultiplePairs-UDP-D2D-Unassisted -r 5..9 -n .:../inet/src/:../simulte-unassistedD2D/src/ unassistedD2D.ini
+opp_runall -j$(nproc) ./unassistedD2D -u Cmdenv -c MultiplePairs-UDP-D2D -r 5..9 -n .:../inet/src/:../simulte-unassistedD2D/src/ unassistedD2D.ini
+opp_runall -j$(nproc) ./unassistedD2D -u Cmdenv -c MultiplePairs-UDP-D2D -r 0..4 -n .:../inet/src/:../simulte-unassistedD2D/src/ unassistedD2D.ini
+opp_runall -j$(nproc) ./unassistedD2D -u Cmdenv -c MultiplePairs-TCP-D2D -r 0..4 -n .:../inet/src/:../simulte-unassistedD2D/src/ unassistedD2D.ini
+opp_runall -j$(nproc) ./unassistedD2D -u Cmdenv -c MultiplePairs-TCP-D2D -r 5..9 -n .:../inet/src/:../simulte-unassistedD2D/src/ unassistedD2D.ini
+opp_runall -j$(nproc) ./unassistedD2D -u Cmdenv -c MultiplePairs-TCP-D2D-Unassisted -r 0..4 -n .:../inet/src/:../simulte-unassistedD2D/src/ unassistedD2D.ini
+opp_runall -j$(nproc) ./unassistedD2D -u Cmdenv -c MultiplePairs-TCP-D2D-Unassisted -r 5..9 -n .:../inet/src/:../simulte-unassistedD2D/src/ unassistedD2D.ini
+opp_runall -j$(nproc) ./unassistedD2D -u Cmdenv -c SinglePair-TCP-D2D -r 0..4 -n .:../inet/src/:../simulte-unassistedD2D/src/ unassistedD2D.ini
+opp_runall -j$(nproc) ./unassistedD2D -u Cmdenv -c SinglePair-TCP-D2D -r 5..9 -n .:../inet/src/:../simulte-unassistedD2D/src/ unassistedD2D.ini
+opp_runall -j$(nproc) ./unassistedD2D -u Cmdenv -c SinglePair-TCP-D2D-Unassisted -r 0..4 -n .:../inet/src/:../simulte-unassistedD2D/src/ unassistedD2D.ini
+opp_runall -j$(nproc) ./unassistedD2D -u Cmdenv -c SinglePair-TCP-D2D-Unassisted -r 5..9 -n .:../inet/src/:../simulte-unassistedD2D/src/ unassistedD2D.ini
+opp_runall -j$(nproc) ./unassistedD2D -u Cmdenv -c SinglePair-TCP-D2D-Multiple -r 0..4 -n .:../inet/src/:../simulte-unassistedD2D/src/ unassistedD2D.ini
+opp_runall -j$(nproc) ./unassistedD2D -u Cmdenv -c SinglePair-TCP-D2D-Multiple -r 5..9 -n .:../inet/src/:../simulte-unassistedD2D/src/ unassistedD2D.ini
+opp_runall -j$(nproc) ./unassistedD2D -u Cmdenv -c SinglePair-TCP-D2D-Unassisted-Multiple -r 0..4 -n .:../inet/src/:../simulte-unassistedD2D/src/ unassistedD2D.ini
+opp_runall -j$(nproc) ./unassistedD2D -u Cmdenv -c SinglePair-TCP-D2D-Unassisted-Multiple -r 5..9 -n .:../inet/src/:../simulte-unassistedD2D/src/ unassistedD2D.ini
+opp_runall -j$(nproc) ./unassistedD2D -u Cmdenv -c SinglePair-UDP-D2D -r 0..4 -n .:../inet/src/:../simulte-unassistedD2D/src/ unassistedD2D.ini
+opp_runall -j$(nproc) ./unassistedD2D -u Cmdenv -c SinglePair-UDP-D2D -r 5..9 -n .:../inet/src/:../simulte-unassistedD2D/src/ unassistedD2D.ini
+opp_runall -j$(nproc) ./unassistedD2D -u Cmdenv -c SinglePair-UDP-D2D-Unassisted -r 0..4 -n .:../inet/src/:../simulte-unassistedD2D/src/ unassistedD2D.ini
+opp_runall -j$(nproc) ./unassistedD2D -u Cmdenv -c SinglePair-UDP-D2D-Unassisted -r 5..9 -n .:../inet/src/:../simulte-unassistedD2D/src/ unassistedD2D.ini
+opp_runall -j$(nproc) ./unassistedD2D -u Cmdenv -c SinglePair-UDP-D2D-Multiple -r 0..4 -n .:../inet/src/:../simulte-unassistedD2D/src/ unassistedD2D.ini
+opp_runall -j$(nproc) ./unassistedD2D -u Cmdenv -c SinglePair-UDP-D2D-Multiple -r 5..9 -n .:../inet/src/:../simulte-unassistedD2D/src/ unassistedD2D.ini
+opp_runall -j$(nproc) ./unassistedD2D -u Cmdenv -c SinglePair-UDP-D2D-Unassisted-Multiple -r 0..4 -n .:../inet/src/:../simulte-unassistedD2D/src/ unassistedD2D.ini
+opp_runall -j$(nproc) ./unassistedD2D -u Cmdenv -c SinglePair-UDP-D2D-Unassisted-Multiple -r 5..9 -n .:../inet/src/:../simulte-unassistedD2D/src/ unassistedD2D.ini
